@@ -12,7 +12,7 @@ describe('Skeleton contract', function () {
     skeleton = await Skeleton.deploy()
   })
 
-  describe('balances tests', function () {
+  describe('stat tests', function () {
     it('should have a count of 0', async () => {
       expect((await skeleton.count())).to.equal(0)
     })

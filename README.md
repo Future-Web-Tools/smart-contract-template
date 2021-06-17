@@ -1,5 +1,5 @@
 
-# Future Web's mart contract template
+# Future Web's smart contract template
 This repo is a starter template that makes it easy to spin a smart contract up quickly and securely. It is developed by [Future Web](http://futureweb.tools).
 
 While the examples specified here are for Ethereum, Binance Smart Chain and the KuCoin Chain, this template can be used for any EVM based blockchain by customizing the `.env.json` file, as described below.
@@ -40,7 +40,7 @@ While the examples specified here are for Ethereum, Binance Smart Chain and the 
 
 ## Verify deployed contract
 
-The following commands will verify your smart contract on EtherScan(Ethereum) and BSC Scan(Binance Smart Chain).
+The following commands will verify your smart contract on EtherScan(Ethereum) and BSC Scan(Binance Smart Chain). If you're contract passes arguments to the constructor, remember to [update the lines according](https://hardhat.org/plugins/nomiclabs-hardhat-etherscan.html).
 
 - Run `npx hardhat verify --network staging DEPLOYED_CONTRACT_ADDRESS` to verify for staging(testnet)
 - Run `npx hardhat verify --network mainnet DEPLOYED_CONTRACT_ADDRESS` to verify for mainnet

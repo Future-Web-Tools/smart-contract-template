@@ -4,10 +4,10 @@ async function main () {
   console.log('Deploying contracts with the account:', deployer.address)
   console.log('Account balance:', (await deployer.getBalance()).toString())
 
-  const Contract = await ethers.getContractFactory('Contract')
-  const contract = await Contract.deploy()
+  const Skeleton = await ethers.getContractFactory('Skeleton')
+  const skeleton = await Skeleton.deploy()
 
-  console.log('Contract address:', contract.address)
+  console.log('Skeleton address:', skeleton.address)
 }
 
 main()
